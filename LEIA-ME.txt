@@ -1,0 +1,29 @@
+NEXTUP TIERS  -  Minecraft 1.21.11 (Fabric)
+==========================================
+
+COMO GERAR O .JAR SEM INSTALAR NADA (usando o GitHub)
+1. Crie uma conta gratis em github.com (se ainda nao tem).
+2. Clique em "+" (canto superior direito) > "New repository".
+   Nome: nextuptiers  |  deixe "Public"  |  clique "Create repository".
+3. Na pagina do repositorio, clique em "uploading an existing file".
+4. Extraia este zip no PC. Abra a pasta "nextuptiers" e ARRASTE TUDO QUE ESTA
+   DENTRO dela (src, .github, build.gradle, settings.gradle, gradle.properties...)
+   para a pagina do GitHub. Clique "Commit changes".
+5. Va na aba "Actions". Espere o "Compilar NextUp Tiers" ficar com o V verde
+   (uns 3 a 6 minutos). Se nao comecou sozinho: clique nele > "Run workflow".
+6. Clique na execucao concluida. Em "Artifacts" (no fim da pagina), baixe
+   "nextuptiers-mod". Dentro do zip esta o nextuptiers-1.0.0.jar.
+
+COMO INSTALAR
+- Coloque o nextuptiers-1.0.0.jar na pasta mods do Minecraft
+  (Windows: Win+R e digite  %appdata%\.minecraft\mods ).
+- Coloque tambem o Fabric API 1.21.11 (modrinth.com/mod/fabric-api) na mesma pasta.
+- Abra o jogo com o perfil Fabric 1.21.11.
+
+COMANDOS NO JOGO
+/tier mode <modalidade>   overall, sword, mace, uhc, smp, cpvp, cart, axe, nethpot, diapot, spearmace
+/tier refresh             atualiza agora
+/tier url [link|reset]    ve/troca o link do site (padrao: https://tierlist-mercenariox.base44.app/)
+/tier fuzzy on|off        aceitar nick parecido
+/tier status              mostra se carregou
+/tier debug               salva detalhes em config/nextuptiers-debug.txt
