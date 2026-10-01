@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "nextuptiers",
+  "version": "${version}",
+  "name": "NextUp Tiers",
+  "description": "Mostra o tier do jogador na frente do nick e no TAB.",
+  "authors": ["voce"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.nextup.tiers.TiersClient"]
+  },
+  "mixins": ["nextuptiers.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
